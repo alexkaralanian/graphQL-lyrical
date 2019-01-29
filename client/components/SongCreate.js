@@ -20,7 +20,7 @@ class SongCreate extends React.Component {
       variables: {
         title: this.state.title
       },
-      refetchQueries: [{ query }]
+      refetchQueries: [{ query }] // makes a second query to update ui
     }).then(() => hashHistory.push("/"))
   }
 

@@ -18,6 +18,7 @@ const client = new ApolloClient({
   // you can always refetch queries, but you have to make a follow-up request
   // here only a single request is need to update data
   // dev.apollodata.com/react/cache-updates.html
+  // assumes ids are unique across entire app
 })
 
 const Root = () => {
